@@ -230,6 +230,7 @@ footer > div > p {
 @media screen and (max-width:576px) {
  body {
         padding: 0;
+        min-width: 500px;
     }
 header nav {
         margin: .5rem;
@@ -256,5 +257,10 @@ section {
 
     }
 
+    @media screen and (max-width:500px) {
+        body {
+            flex-direction: column;
+        }
+    }
 
 
