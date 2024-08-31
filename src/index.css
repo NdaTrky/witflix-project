@@ -1,5 +1,5 @@
 body {
-    padding:0;
+    padding:0 1.5rem;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
    
@@ -24,9 +24,9 @@ img.profile {
 nav {
     display: flex;
     gap: 1.5rem;
-}
+} 
 
-header nav a {
+nav a {
     color: black;
     text-decoration: none;
 }
@@ -36,7 +36,12 @@ nav a:hover {
 }
 
 .search input {
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 2rem 0.5rem 0.3rem;
+    background-image: url("./assets/img/search-icon-png-9969.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    
 }
 
 .search {
@@ -55,14 +60,17 @@ img.profile {
 
 main {
     display: flex;
-    width: 93%;
-    margin: auto;
     border: 1px solid black;
     padding: 1rem;
     align-items: center;
     aspect-ratio: 16/8;
 }
 
+.movie-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
 .user-ratings {
     display: inline-block;
 
@@ -72,14 +80,37 @@ main {
     color: red;
 }
 
+.maturity {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: .1%;
+}
+
+
 .btn {
     background: red;
     color: white;
     border-radius: 10px;
-    padding: 0.8rem 1.2rem;
+    
     display: inline-block;
     align-items: center;
 }
+
+.btn-lg {
+    padding: 0.8rem 1rem;
+   
+}
+
+.btn-md {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+}
+
+.fa-play {
+    display: flex;
+    gap: .3rem;
+}
+
 
 .movie-details {
     padding-left: 0;
@@ -99,4 +130,88 @@ main {
     list-style-type:none;
     margin-bottom: 0.6rem;
 }
+
+
+
+.suggestion-row {
+    margin: 2rem auto;
+    
+}
+
+
+.suggestion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion-title h2 {
+    font-size: 1.2rem;
+}
+
+
+.suggestion-content {
+    display:flex;
+    gap: 2rem;
+}
+
+
+
+
+.suggestion-item {
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+    width: 25%;
+    padding: 1rem;
+    aspect-ratio: 16/9;
+    
+}
+
+
+.suggestion-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+   
+}
+.fa-facebook {
+color: #1877F2;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+footer > div > p {
+    margin-top: 0;
+}
+
+.copyrigth {
+    display: flex;
+    padding: 1rem 0;
+    
+}
+
+.social-media-app div {
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+   padding-top: 1rem;
+   
+}
+
+
+.social-media-logo img {
+    max-width:30%;
+    
+}
+
 
